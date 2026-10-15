@@ -1,0 +1,282 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #07111f;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.18), transparent 30%), radial-gradient(circle at 85% 75%, rgba(14, 165, 233, 0.12), transparent 30%), #07111f;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.logo-highlight {
+    color: #38bdf8;
+}
+
+.nav-text {
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px 50px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1050px;
+    text-align: center;
+}
+
+.small-title {
+    display: inline-block;
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.12;
+    letter-spacing: -2px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+    h1 span {
+        background: linear-gradient(90deg, #38bdf8, #60a5fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+.description {
+    max-width: 620px;
+    margin: auto;
+    color: #94a3b8;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ================= LOGIN CARDS ================= */
+
+.login-container {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-card {
+    position: relative;
+    text-align: left;
+    padding: 30px;
+    min-height: 245px;
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 18px;
+    background: rgba(15, 29, 48, 0.78);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+    .login-card::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgba(56, 189, 248, 0.08);
+        right: -45px;
+        top: -45px;
+    }
+
+    .login-card:hover {
+        transform: translateY(-7px);
+        border-color: rgba(56, 189, 248, 0.5);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    }
+
+.card-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.user-icon {
+    background: rgba(37, 99, 235, 0.15);
+}
+
+.admin-icon {
+    background: rgba(56, 189, 248, 0.12);
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+    .card-content h2 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .card-content p {
+        color: #94a3b8;
+        font-size: 13px;
+        line-height: 1.6;
+        max-width: 310px;
+        margin-bottom: 22px;
+    }
+
+
+/* ================= BUTTONS ================= */
+
+.login-btn {
+    border: none;
+    border-radius: 9px;
+    padding: 12px 18px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.user-btn {
+    background: #2563eb;
+    color: white;
+}
+
+    .user-btn:hover {
+        background: #1d4ed8;
+        transform: translateX(3px);
+    }
+
+.admin-btn {
+    background: transparent;
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.5);
+}
+
+    .admin-btn:hover {
+        background: rgba(56, 189, 248, 0.1);
+        transform: translateX(3px);
+    }
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    color: #64748b;
+    font-size: 12px;
+}
+
+    footer div {
+        color: #94a3b8;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+    footer span {
+        color: #38bdf8;
+        margin: 0 5px;
+    }
+
+    footer p {
+        color: #475569;
+    }
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .login-container {
+        grid-template-columns: 1fr;
+        max-width: 430px;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+}
