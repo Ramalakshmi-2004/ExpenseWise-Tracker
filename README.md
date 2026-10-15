@@ -60,7 +60,5 @@ ExpenseWise Tracker is a web-based Expense Management System developed using ASP
 ## Author
 
 **Ramalakshmi**
+GitHub: https://github.com/Ramalakshmi-2004
 
-## Note
-
-Database configuration is required before running the application. Never commit passwords, private credentials, or sensitive user data to a public repository.
